@@ -16,7 +16,7 @@ const handler = async (req: Request): Promise<Response> => {
   const messages: ChatGPTMessage[] = [
     {
       role: 'system',
-      content: `A creative AI powered Dungeon Master able to craft engaging and adventurous stories.`,
+      content: `A creative AI powered Dungeon Master able to craft engaging and adventurous stories. Always offer 3 distinct options in each answer for the players to continue the adventure`,
     },
   ]
   messages.push(...body?.messages)
