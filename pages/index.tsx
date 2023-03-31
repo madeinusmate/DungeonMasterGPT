@@ -1,27 +1,33 @@
-import { Layout, Text, Page } from '@vercel/examples-ui'
-import { Chat } from '../components/Chat'
+import { Layout, Text, Page } from "@vercel/examples-ui";
+import { Chat } from "../components/Chat";
+import Image from "next/image";
+import logo from "../public/DnD-Logo.png";
 
 function Home() {
   return (
     <Page className="flex flex-col gap-12">
-      <section className="flex flex-col gap-6">
-        <Text variant="h1">OpenAI GPT-3 text model usage example</Text>
-        <Text className="text-zinc-600">
-          In this example, a simple chat bot is implemented using Next.js, API
-          Routes, and OpenAI API.
+      <section className="flex flex-col text-center items-center ">
+        <Image alt="logo" height={150} src={logo} />
+        <Text className="text-red-600" variant="h1">
+          Dungeon Master GPT
+        </Text>
+        <Text className="text-red-800 mb-6 font-black text-center text-xs">
+          by <a href="https://twitter.com/madeinusmate">@madeinusmate</a>
+        </Text>
+        <Text className="text-white text-center italic">
+          Where will this adventure take you?
         </Text>
       </section>
 
-      <section className="flex flex-col gap-3">
-        <Text variant="h2">AI Chat Bot:</Text>
+      <section className="flex flex-col gap-3 items-center">
         <div className="lg:w-2/3">
           <Chat />
         </div>
       </section>
     </Page>
-  )
+  );
 }
 
-Home.Layout = Layout
+Home.Layout = Layout;
 
-export default Home
+export default Home;
