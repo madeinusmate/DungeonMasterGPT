@@ -5,7 +5,7 @@ import logo from "../public/DnD-Logo.png";
 
 function Home() {
   return (
-    <Page className="flex flex-col gap-12">
+    <Page className="flex flex-col gap-12 bg-zinc-800">
       <section className="flex flex-col text-center items-center ">
         <Image alt="logo" height={150} src={logo} />
         <Text className="text-red-600" variant="h1">

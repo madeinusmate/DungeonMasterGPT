@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
   const Layout = getLayout<LayoutProps>(Component);
 
   return (
-    <div className="bg-zinc-800 h-screen">
+    <div className="bg-zinc-800">
       <Component {...pageProps} />
       <Analytics />
     </div>
